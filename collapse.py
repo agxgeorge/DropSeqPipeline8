@@ -31,15 +31,11 @@ elif technology in ['10xv3','CiteSeq3v3','CiteSeqTSB']:
 	umipos = 11
 	cellbcpos = 15
 	cellbclen = 16
-
-<<<<<<< HEAD
-=======
 elif technology in ['scPLATE-seq']:
 	umipos = 7
 	cellbcpos = 7
 	cellbclen = 8
 
->>>>>>> add-scPLATE-seq-technology
 cellbcs = {}  # dictionary with cell barcode sequence keys and addresscts_INFILE line values
 cellbcsT = {} # dictionary with cell barcode sequence keys and number of UMI terminal nts that are 'T' as values
 with open(addresscts_INFILE) as f:

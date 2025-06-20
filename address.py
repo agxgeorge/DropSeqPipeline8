@@ -69,13 +69,10 @@ elif technology == '10xv3':
 	cellbclen = 16 
 	umilen = 12
 
-<<<<<<< HEAD
-=======
 elif technology == 'scPLATE-seq':
 	cellbclen = 8 
 	umilen = 8
 
->>>>>>> add-scPLATE-seq-technology
 for line in sys.stdin:  # loop through coordinate-sorted sam file piped through stdin
 	if line[0] != '@':
 		llist = line.split()
