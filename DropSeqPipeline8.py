@@ -18,7 +18,6 @@ def parse_user_input():
 	parser.add_argument('-t','--threads',type=int,required=True,help='Number of threads for STAR and samtools.')
 	parser.add_argument('-s','--s3path',required=True,help='s3 bucket for data storage.')
 	parser.add_argument('-x','--technology',required=True,choices=['10xv2','10xv3','DropSeqv1','DropSeqv2','PearSeq','CiteSeq3v3','CiteSeq5v2','CiteSeqTSB'],help='Technology (determines barcoding scheme).') 
-	parser.add_argument('-x','--technology',required=True,choices=['10xv2','10xv3','DropSeqv1','DropSeqv2','PearSeq','CiteSeq3v3','CiteSeq5v2','CiteSeqTSB','scPLATE-seq'],help='Technology (determines barcoding scheme).') 
 	parser.add_argument('-b','--citeseq-barcodes',required=False,help='Path to 2-column file with cite-seq features and barcodes. Required if technology is PearSeq.')
 	parser.add_argument('-e','--exon-only',action='store_true',help='Option to skip whole-gene body processing and only process exon-only reads.')
 	parser.add_argument('-a','--address-only',action='store_true',help='Option to stop after generating an address file (e.g. for index-swap correction).')
