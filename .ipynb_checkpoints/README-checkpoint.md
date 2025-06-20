@@ -15,10 +15,7 @@ python DropSeqPipeline8.py -o output_directory -p output_prefix -r1 input_R1.fas
 
 where 65 is the sjdbOverhang parameter used to build the suffix array for STAR and 8 is the desired number of threads for parallelizing STAR and samtools.
 
-<<<<<<< HEAD
-=======
 CHANGELOG: 
 
 6/20/2025 - Added technology 'scPLATE-seq' to accommodate low input RNA-seq implemented in Snyder et. al and Hobson et. al Papers. 
 
->>>>>>> add-scPLATE-seq-technology

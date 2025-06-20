@@ -19,6 +19,11 @@ def clipper(fastq1_INFILE,technology,fastq2_INFILE): # gzip compressed input and
 		bclen = 21 # new drop-seq barcode region is first 21 nt of read 1
 	elif technology == '10xv3':
 		bclen = 28 # 10x v3 barcode region is first 28 nt of read 1
+<<<<<<< HEAD
+=======
+	elif technology == 'scPLATE-seq':
+		bclen = 16 # scPLATE-seq barcode region is first 16 nt of read 1
+>>>>>>> add-scPLATE-seq-technology
 	i = 0
 	with gzip.open(fastq1_INFILE,'rb') as f:
 		for line in f:
